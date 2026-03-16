@@ -1,0 +1,67 @@
+nohup: ignoring input
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+127.0.0.1 - - [14/Oct/2025 03:27:23] "GET /api/effect-categories HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 03:27:57] "GET /api/skin-types HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 03:27:57] "GET /api/effect-categories HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 03:27:57] "GET /api/stats/overview HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 03:27:57] "GET /api/effect-categories HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 03:27:57] "GET /api/skin-types HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 03:27:57] "GET /api/stats/overview HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 03:28:08] "GET /api/ingredients/by-effect/1 HTTP/1.1" 200 -
+127.0.0.1 - - [14/Oct/2025 03:28:27] "GET /api/ingredients/by-effect/1 HTTP/1.1" 200 -
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/generate_product_data.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/init_data.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/generate_product_data.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/generate_product_data.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/models/cosmetic.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/models/cosmetic.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/models/cosmetic.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/models/cosmetic.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/models/cosmetic.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 806-772-415
+ * Detected change in '/home/ubuntu/cosmetic_ingredient_system/backend/src/models/cosmetic.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/ubuntu/cosmetic_ingredient_system/backend/src/main.py", line 10, in <module>
+    from src.routes.cosmetic import cosmetic_bp
+  File "/home/ubuntu/cosmetic_ingredient_system/backend/src/routes/cosmetic.py", line 7, in <module>
+    from src.models.cosmetic import (
+  File "/home/ubuntu/cosmetic_ingredient_system/backend/src/models/cosmetic.py", line 23
+    Column('product_id', Integer, ForeignKey('products.id')),\n    Column('concentration_level', String(50)),
+                                                              ^
+SyntaxError: unexpected character after line continuation character
